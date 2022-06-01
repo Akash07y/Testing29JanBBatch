@@ -19,29 +19,6 @@ import browser.Base;
 import pomClass.ApplicationHeader;
 import pomClass.LoginPage;
 
-
-
-
-
-
-
-
-
-www.amezon.com
-
-www.sit-amezon.com
-
-www.sit-amezon.com
-
-www.rt-amezon.com
-
-www.uat-amezon.com
-
-www.d-amezon.com
-
-
-
-
 public class TestClass2 {
 	
 
@@ -49,25 +26,25 @@ public class TestClass2 {
 	LoginPage loginPage ;
 	ApplicationHeader applicationHeader ;
 	
-	@Parameters ("browser")
-	@BeforeTest
-	public void launchBrowser(String browserName) {
-		System.out.println(browserName);
-		if(browserName.equals("Chrome"))
-		{
-			driver = Base.openChromeBrowser();	
-		}
-		if(browserName.equals("Firefox"))
-		{
-			driver = Base.openFirefoxBrowser();	
-		}
-		if(browserName.equals("Opera"))
-		{
-			driver = Base.openOperaBrowser();	
-		}
-		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+// 	@Parameters ("browser")
+// 	@BeforeTest
+// 	public void launchBrowser(String browserName) {
+// 		System.out.println(browserName);
+// 		if(browserName.equals("Chrome"))
+// 		{
+// 			driver = Base.openChromeBrowser();	
+// 		}
+// 		if(browserName.equals("Firefox"))
+// 		{
+// 			driver = Base.openFirefoxBrowser();	
+// 		}
+// 		if(browserName.equals("Opera"))
+// 		{
+// 			driver = Base.openOperaBrowser();	
+// 		}
+// 		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
 	
-	}
+// 	}
 	
 	@BeforeClass
 	public void creatPOMObject() {
